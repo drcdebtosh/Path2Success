@@ -99,6 +99,15 @@ a{
     width: 30rem;
     border-radius: 2rem;
 }
+.g_id_signin{
+    display:grid;
+    place-items: center;
+}
+/* hIDDEN CLASS FOR GOOGLE */
+.hidden{
+    display: none;
+    
+}
 
 @media screen and (max-width: 1400px) {
 
