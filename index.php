@@ -37,7 +37,7 @@
                     <a class=" nav-link" href="#contact">Contact</a>
                 </li>
                 <li class=" nav-item">
-                    <a class=" nav-link" href="/signup.html">Register/Login</a>
+                    <a class=" nav-link" href="/Path2Success/signup.php">Register/Login</a>
                 </li>
               
 
@@ -73,7 +73,7 @@
             <div class="col-xl-6 xol-lg-6 col-md-12 col-12 order-0 order-lg-1 hero-image--section ">
                 <div class="text-md-end text-center mb-5">
 
-                    <video autoplay class="hero-video--section" loop muted src="./images/hero.mp4">
+                    <video autoplay class="hero-video--section" loop muted src="./images/growth.mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
