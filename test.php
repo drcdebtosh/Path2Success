@@ -1,10 +1,20 @@
+<?php
+session_start();
+
+if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
+    header("location: login.php");
+    exit;
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Game - API Project</title>
+    <title>Path2Success - Test</title>
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,7 +23,30 @@
 <body>
 <?php require 'partials/_nav.php' ?> 
 <section class="common-section bg-color contact-section text-white d-flex p-2">
-    <div class = "wrapper mx-auto ">
+    <!-- <div class = "wrapper mx-auto ">
+        <div class = "quiz-container">
+            <div class = "quiz-head">
+                <h1 class = "quiz-title">Test Yourself</h1>
+                <div class = "quiz-score flex">
+                    <span id = "correct-score"></span>/<span id = "total-question"></span>
+                </div>
+            </div>
+            <div class = "quiz-body">
+                <h2 class = "quiz-question" id = "question"></h2>
+                <ul class = "quiz-options">
+                    
+                </ul>
+                <div id = "result">
+                </div>
+            </div>
+            <div class = "quiz-foot">
+                <button type = "button" id = "check-answer">Check Answer</button>
+                <button type = "button" id = "play-again">Test Again?</button>
+            </div>
+        </div>
+    </div> -->
+
+    <div class = "wrapper mx-auto">
         <div class = "quiz-container">
             <div class = "quiz-head">
                 <h1 class = "quiz-title">Test Yourself</h1>
@@ -34,18 +67,19 @@
             </div>
             <div class = "quiz-foot">
                 <button type = "button" id = "check-answer">Check Answer</button>
-                <button type = "button" id = "play-again">Test Again?</button>
+                <button type = "button" id = "play-again">Test Again!</button>
             </div>
         </div>
     </div>
+
 <!-- Test Section Ends -->
  <!-- Divider -->
- <div class="custom-shape-divider-bottom-1684208460">
+ <!-- <div class="custom-shape-divider-bottom-1684208460">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
                   class="shape-fill"></path>
         </svg>
-    </div>
+    </div> -->
 
 </section>
 

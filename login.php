@@ -37,7 +37,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
           integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
-    <title>logIn Yourself</title>
+    <title>Path2Success -logIn</title>
   </head>
   <body>
     <?php require 'partials/_nav.php' ?>

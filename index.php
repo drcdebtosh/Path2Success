@@ -65,7 +65,7 @@
 
                 <div class="text-center w-100 text-md-start">
                     <a class="btn btn-primary px-5 py-2 " data-bs-offset="0,5" data-bs-placement="top"
-                    data-bs-title="Sign up Now" data-bs-toggle="tooltip" href="#" role="button">Get Started!</a>
+                    data-bs-title="Sign up Now" data-bs-toggle="tooltip" href="/path2success/signup.php" role="button">Get Started!</a>
                 </div>
 
             </div>
